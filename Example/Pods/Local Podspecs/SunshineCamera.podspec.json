@@ -18,5 +18,15 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SunshineCamera/Classes/**/*"
+  "source_files": "SunshineCamera/Classes/**/*",
+  "resource_bundles": {
+    "SunshineCamera": [
+      "SunshineCamera/Assets/*.png",
+      "SunshineCamera/Assets/*.storyboard"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ]
 }

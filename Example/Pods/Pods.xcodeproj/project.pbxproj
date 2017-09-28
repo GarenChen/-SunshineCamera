@@ -8,15 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		051DE26A301A105F672D54882030E59E /* Pods-SunshineCamera_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BFF89F5DC13FB46109C17EE4E43EA /* Pods-SunshineCamera_Tests-dummy.m */; };
-		2888F785AC477448819ACCBE26F3A823 /* SunshineCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7295FA154A5244EF0433C22F18D865 /* SunshineCamera-dummy.m */; };
+		1311C849DAFEA67D9F614DC5EB36C6E9 /* camera_btn_switchcamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8627FCC5496D14850F6600F99B0B2B3A /* camera_btn_switchcamera@2x.png */; };
+		2E6735715CD6E53316ABAE71ACED4A09 /* camera_topbar_btn_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D63A23C2217C9F7E6A69B87F407535B /* camera_topbar_btn_flash_off@2x.png */; };
+		33549A50EE833A52DF62E671CF533B01 /* camera_topbar_btn_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5723E664F137C1C884D844581FBD9049 /* camera_topbar_btn_close@3x.png */; };
+		356C927B0D5E07204215CD088591BC99 /* camera_topbar_btn_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4672E4D4AC17EA3E034168394C5381 /* camera_topbar_btn_close@2x.png */; };
 		481BCB6187AD322BE1A363B61C647C2F /* Pods-SunshineCamera_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AED133068B400F0C66038BE95EB852B3 /* Pods-SunshineCamera_Example-dummy.m */; };
-		4CF962E6FC2CB94AB38A6ED66ED1FF02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7947847099C8213DCAF91F483D48D18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		824BDFFBB434F41673A2209F8C39C6B0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7083617DA557B20167492610DFEAD1 /* ReplaceMe.swift */; };
-		892F7552D6442A5D921ECCE203090859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		97C2E68B1D77753F896B378C119F4BFC /* SunshineCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9669381DB463BFD5920FD72FC268D386 /* SunshineCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		499BBFBB72896D4268CB8B8621862D30 /* camera_topbar_btn_flash_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A6FDF71D34D9B090680DBBE266514C /* camera_topbar_btn_flash_off@3x.png */; };
+		61A1149C864A1F1A5C89C6B845E8203C /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF2675B2FA2B08D5CB7D38FE54EC47 /* TopBar.swift */; };
+		7947847099C8213DCAF91F483D48D18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
+		7A870C8A83042E63D403AECE0A2FCD72 /* PhotoCaptureController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D5F9A800DB15D9D8442FF8B0B3A04B /* PhotoCaptureController.storyboard */; };
+		892F7552D6442A5D921ECCE203090859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
+		96B86D05879EE776F2A6C69C1552C3D4 /* SunshineCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150BDB759A9EF46621E2B0548D6578 /* SunshineCamera-dummy.m */; };
+		97C2E68B1D77753F896B378C119F4BFC /* SunshineCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8478ADFFAACDFCBC00511A3E550D0A2 /* SunshineCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9AFA4719D47F0DFB7D126B5B564B81E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8436533CEC029288113A22556AA9D09 /* MapKit.framework */; };
+		B91ED2E2C28DB528F9EF0AAC9F524B33 /* camera_btn_switchcamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D053C1C3F626981B3B2B613EF825A6 /* camera_btn_switchcamera@3x.png */; };
+		BE9E94F8ECEC967C7A9A1C7320995B64 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204A38D4AA0732B39243A1E547B90E33 /* PhotoCaptureView.swift */; };
+		C7D78D848A0DFB189E2355260302F347 /* Debuglog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DB1F34B2DC8420BE8867ED3D81A074 /* Debuglog.swift */; };
+		CA80AF585689381EBF014BD424FD7E81 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273D6F122CD7E97E827B139703820A9 /* BottomBar.swift */; };
 		D70406B019D9319894075E698EF96FC2 /* Pods-SunshineCamera_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F8945462F27D84449CD9040CC2262B /* Pods-SunshineCamera_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE37D530DE3A199067B5D60A6C2F3D83 /* PhotoCaptrueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFCD848D57786E9905D5B75F414154 /* PhotoCaptrueController.swift */; };
 		E486A7DFB8900F8D3EE4A2B230EB7759 /* Pods-SunshineCamera_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2E934D0D649C9800B8540FAAE2CD14 /* Pods-SunshineCamera_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5C4C80F7D44D05CBAFC86427B6CAD26 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F21B892EDF2B8F746BCFA434CDA4 /* Bundle+Extension.swift */; };
+		E81D8D59B420083769D3BFE066ED64C2 /* camera_topbar_btn_flash_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 300D64A34067D370C3CA2E2EF97D1AC0 /* camera_topbar_btn_flash_n@2x.png */; };
+		EE1439751549FFF80002B658F4368954 /* SunshineCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */; };
+		F1C5568CC54B45410A53A2CA168BA644 /* camera_topbar_btn_flash_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E05A66D7652422A458AE3436669B30B6 /* camera_topbar_btn_flash_n@3x.png */; };
+		F71AE9916248868B202F5E6DF3E29C3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */; };
+		F9DB5D92FE161EE3785C4BC67366DF42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,39 +44,64 @@
 			remoteGlobalIDString = 785BB3A7AA42821A266ACBD58ADF7D67;
 			remoteInfo = SunshineCamera;
 		};
+		C6ED66BF2E20825612C9254D3A731C28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19EB1C9850FEFEB614D1BD5832992B40;
+			remoteInfo = "SunshineCamera-SunshineCamera";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0750F699F8984B59B0B5973FC1620946 /* Pods_SunshineCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Tests.framework; path = "Pods-SunshineCamera_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		109317DC383822F5B1C6CCE7DADA3369 /* ResourceBundle-SunshineCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SunshineCamera-Info.plist"; sourceTree = "<group>"; };
+		1A4672E4D4AC17EA3E034168394C5381 /* camera_topbar_btn_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@2x.png"; sourceTree = "<group>"; };
+		204A38D4AA0732B39243A1E547B90E33 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptureView.swift; path = SunshineCamera/Classes/PhotoCaptureView.swift; sourceTree = "<group>"; };
 		21A9713B067284F83DA49ACB9A970D0D /* Pods-SunshineCamera_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		25B12659C1981F7C1A9AE778826898E8 /* Pods_SunshineCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Example.framework; path = "Pods-SunshineCamera_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A6FDF71D34D9B090680DBBE266514C /* camera_topbar_btn_flash_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@3x.png"; sourceTree = "<group>"; };
 		26F8945462F27D84449CD9040CC2262B /* Pods-SunshineCamera_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineCamera_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2852E352B0715CA6C0B50CBD631CC87B /* Pods-SunshineCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2AA751FF929C47F26D32196DBAB931D0 /* Pods-SunshineCamera_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Example-resources.sh"; sourceTree = "<group>"; };
+		2D63A23C2217C9F7E6A69B87F407535B /* camera_topbar_btn_flash_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@2x.png"; sourceTree = "<group>"; };
 		2F309F3BAAA67B1437E8076E8390123B /* Pods-SunshineCamera_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Example-frameworks.sh"; sourceTree = "<group>"; };
+		300D64A34067D370C3CA2E2EF97D1AC0 /* camera_topbar_btn_flash_n@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@2x.png"; sourceTree = "<group>"; };
 		35CA5E7DF6A75D22F87B1FC72B15A878 /* Pods-SunshineCamera_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineCamera_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		37008B5767D440D37B7A6BD17FE02C88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3BF404661DBA1E32FB117A7DDDE4DDF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49A419D7F0CBE6597565894E7531EBE8 /* SunshineCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineCamera.xcconfig; sourceTree = "<group>"; };
-		563C93030179EE10E86B055B587881BF /* SunshineCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineCamera.modulemap; sourceTree = "<group>"; };
+		461E8F8256AAB6DF23245D9E9AC0724A /* Pods_SunshineCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Example.framework; path = "Pods-SunshineCamera_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SunshineCamera.bundle; path = SunshineCamera.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723E664F137C1C884D844581FBD9049 /* camera_topbar_btn_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@3x.png"; sourceTree = "<group>"; };
+		58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		59A0F21B892EDF2B8F746BCFA434CDA4 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "SunshineCamera/Classes/Bundle+Extension.swift"; sourceTree = "<group>"; };
 		5D2E934D0D649C9800B8540FAAE2CD14 /* Pods-SunshineCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineCamera_Example-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		67C858D72E41FDCBE57FCA3A74400D80 /* Pods-SunshineCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineCamera_Example.modulemap"; sourceTree = "<group>"; };
+		6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineCamera.xcconfig; sourceTree = "<group>"; };
+		72DB1F34B2DC8420BE8867ED3D81A074 /* Debuglog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debuglog.swift; path = SunshineCamera/Classes/Debuglog.swift; sourceTree = "<group>"; };
+		8273D6F122CD7E97E827B139703820A9 /* BottomBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomBar.swift; path = SunshineCamera/Classes/BottomBar.swift; sourceTree = "<group>"; };
+		8627FCC5496D14850F6600F99B0B2B3A /* camera_btn_switchcamera@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@2x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@2x.png"; sourceTree = "<group>"; };
 		8656106DA2FDDE12F8E8567672374E09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86EDB0D4FC9897974B211E3399DF6B63 /* Pods-SunshineCamera_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineCamera_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90BC81576A1DD6BE10B207976C627A9F /* Pods-SunshineCamera_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineCamera_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9669381DB463BFD5920FD72FC268D386 /* SunshineCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-umbrella.h"; sourceTree = "<group>"; };
-		9E320107C8A125F286982894B45B7BF5 /* Pods_SunshineCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Tests.framework; path = "Pods-SunshineCamera_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE7295FA154A5244EF0433C22F18D865 /* SunshineCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineCamera-dummy.m"; sourceTree = "<group>"; };
 		AED133068B400F0C66038BE95EB852B3 /* Pods-SunshineCamera_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineCamera_Example-dummy.m"; sourceTree = "<group>"; };
 		B004626BFED84584FCA5AB351AF824A1 /* Pods-SunshineCamera_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineCamera_Tests.modulemap"; sourceTree = "<group>"; };
+		B8436533CEC029288113A22556AA9D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		BD59AE1EC3E22A9F4FF8B1D784D3F471 /* Pods-SunshineCamera_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineCamera_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C10452FCBA82C2C6572261B5A2467D0E /* SunshineCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineCamera.framework; path = SunshineCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C150F5F315D887621254E82C549BCD64 /* Pods-SunshineCamera_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Tests-resources.sh"; sourceTree = "<group>"; };
+		C8BFCD848D57786E9905D5B75F414154 /* PhotoCaptrueController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptrueController.swift; path = SunshineCamera/Classes/PhotoCaptrueController.swift; sourceTree = "<group>"; };
+		C9150BDB759A9EF46621E2B0548D6578 /* SunshineCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineCamera-dummy.m"; sourceTree = "<group>"; };
+		CBE9C15CD3A5149CD2F1D691E30F70D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8FCE1F0B87E99BDB1EE4F5556DE829 /* SunshineCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineCamera.framework; path = SunshineCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD88AF1961C8E68E367A4F80A8D039E /* Pods-SunshineCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DA7083617DA557B20167492610DFEAD1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SunshineCamera/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		DB3070C90A39EFBCB1BA7254608FB702 /* SunshineCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-prefix.pch"; sourceTree = "<group>"; };
+		D0DF2675B2FA2B08D5CB7D38FE54EC47 /* TopBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBar.swift; path = SunshineCamera/Classes/TopBar.swift; sourceTree = "<group>"; };
+		D1D5F9A800DB15D9D8442FF8B0B3A04B /* PhotoCaptureController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = PhotoCaptureController.storyboard; path = SunshineCamera/Assets/PhotoCaptureController.storyboard; sourceTree = "<group>"; };
 		DBE1BB6DF42EFC2093AB9727C8C2F685 /* Pods-SunshineCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E05A66D7652422A458AE3436669B30B6 /* camera_topbar_btn_flash_n@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@3x.png"; sourceTree = "<group>"; };
+		E1D053C1C3F626981B3B2B613EF825A6 /* camera_btn_switchcamera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@3x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@3x.png"; sourceTree = "<group>"; };
+		E8478ADFFAACDFCBC00511A3E550D0A2 /* SunshineCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-umbrella.h"; sourceTree = "<group>"; };
+		E9375CA03988B4DAAFE2A892A6766723 /* SunshineCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineCamera.modulemap; sourceTree = "<group>"; };
+		EC5013B4B4F63386CDA25966843C1382 /* SunshineCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-prefix.pch"; sourceTree = "<group>"; };
 		F14BFF89F5DC13FB46109C17EE4E43EA /* Pods-SunshineCamera_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineCamera_Tests-dummy.m"; sourceTree = "<group>"; };
 		F79BCA5D8A3D8435C2939C44BF932558 /* Pods-SunshineCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,14 +115,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5588385058ADF69E8575E0C193A796A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CF962E6FC2CB94AB38A6ED66ED1FF02 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		806B83F1E0A2019C8B43796269A59B06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,44 +123,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8461369188CD96F99A84FABC7C9D842E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DB5D92FE161EE3785C4BC67366DF42 /* Foundation.framework in Frameworks */,
+				A9AFA4719D47F0DFB7D126B5B564B81E /* MapKit.framework in Frameworks */,
+				F71AE9916248868B202F5E6DF3E29C3E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B113B9E57479387090361C194228998F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3020945DAD7B65FB1EB1F38D7FC393A7 /* SunshineCamera */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA7083617DA557B20167492610DFEAD1 /* ReplaceMe.swift */,
-				9C7B93FB645B6545D870B1D66AA979E0 /* Support Files */,
+				5013620A7162A5C7CFF94512DF9CF854 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FBCC637D67AC5D5FE0258BF3FEFFB37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9C15CD3A5149CD2F1D691E30F70D1 /* Info.plist */,
+				109317DC383822F5B1C6CCE7DADA3369 /* ResourceBundle-SunshineCamera-Info.plist */,
+				E9375CA03988B4DAAFE2A892A6766723 /* SunshineCamera.modulemap */,
+				6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */,
+				C9150BDB759A9EF46621E2B0548D6578 /* SunshineCamera-dummy.m */,
+				EC5013B4B4F63386CDA25966843C1382 /* SunshineCamera-prefix.pch */,
+				E8478ADFFAACDFCBC00511A3E550D0A2 /* SunshineCamera-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SunshineCamera";
+			sourceTree = "<group>";
+		};
+		26CA1D2DB1E5882D3310990B0828BBC6 /* SunshineCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8273D6F122CD7E97E827B139703820A9 /* BottomBar.swift */,
+				59A0F21B892EDF2B8F746BCFA434CDA4 /* Bundle+Extension.swift */,
+				72DB1F34B2DC8420BE8867ED3D81A074 /* Debuglog.swift */,
+				C8BFCD848D57786E9905D5B75F414154 /* PhotoCaptrueController.swift */,
+				204A38D4AA0732B39243A1E547B90E33 /* PhotoCaptureView.swift */,
+				D0DF2675B2FA2B08D5CB7D38FE54EC47 /* TopBar.swift */,
+				3010EFBF07A6C07EB89AAEB41F9D35E7 /* Resources */,
+				1FBCC637D67AC5D5FE0258BF3FEFFB37 /* Support Files */,
 			);
 			name = SunshineCamera;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		46AF03CBC844E22876AF432DD2BE477C /* Products */ = {
+		274858746BB11E2CD86ECE8FB9DB9AB9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				25B12659C1981F7C1A9AE778826898E8 /* Pods_SunshineCamera_Example.framework */,
-				9E320107C8A125F286982894B45B7BF5 /* Pods_SunshineCamera_Tests.framework */,
-				C10452FCBA82C2C6572261B5A2467D0E /* SunshineCamera.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		658CA9FE27A4DE6AED1B07F7F54559BD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3020945DAD7B65FB1EB1F38D7FC393A7 /* SunshineCamera */,
+				26CA1D2DB1E5882D3310990B0828BBC6 /* SunshineCamera */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3010EFBF07A6C07EB89AAEB41F9D35E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8627FCC5496D14850F6600F99B0B2B3A /* camera_btn_switchcamera@2x.png */,
+				E1D053C1C3F626981B3B2B613EF825A6 /* camera_btn_switchcamera@3x.png */,
+				1A4672E4D4AC17EA3E034168394C5381 /* camera_topbar_btn_close@2x.png */,
+				5723E664F137C1C884D844581FBD9049 /* camera_topbar_btn_close@3x.png */,
+				300D64A34067D370C3CA2E2EF97D1AC0 /* camera_topbar_btn_flash_n@2x.png */,
+				E05A66D7652422A458AE3436669B30B6 /* camera_topbar_btn_flash_n@3x.png */,
+				2D63A23C2217C9F7E6A69B87F407535B /* camera_topbar_btn_flash_off@2x.png */,
+				24A6FDF71D34D9B090680DBBE266514C /* camera_topbar_btn_flash_off@3x.png */,
+				D1D5F9A800DB15D9D8442FF8B0B3A04B /* PhotoCaptureController.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5013620A7162A5C7CFF94512DF9CF854 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */,
+				B8436533CEC029288113A22556AA9D09 /* MapKit.framework */,
+				58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				658CA9FE27A4DE6AED1B07F7F54559BD /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				46AF03CBC844E22876AF432DD2BE477C /* Products */,
+				274858746BB11E2CD86ECE8FB9DB9AB9 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				D19CB6F8B1610101831009A82AEE9359 /* Products */,
 				7EA2348EFD98489D919642B75DEFF16B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -158,34 +254,15 @@
 			path = "Target Support Files/Pods-SunshineCamera_Tests";
 			sourceTree = "<group>";
 		};
-		9C7B93FB645B6545D870B1D66AA979E0 /* Support Files */ = {
+		D19CB6F8B1610101831009A82AEE9359 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37008B5767D440D37B7A6BD17FE02C88 /* Info.plist */,
-				563C93030179EE10E86B055B587881BF /* SunshineCamera.modulemap */,
-				49A419D7F0CBE6597565894E7531EBE8 /* SunshineCamera.xcconfig */,
-				AE7295FA154A5244EF0433C22F18D865 /* SunshineCamera-dummy.m */,
-				DB3070C90A39EFBCB1BA7254608FB702 /* SunshineCamera-prefix.pch */,
-				9669381DB463BFD5920FD72FC268D386 /* SunshineCamera-umbrella.h */,
+				461E8F8256AAB6DF23245D9E9AC0724A /* Pods_SunshineCamera_Example.framework */,
+				0750F699F8984B59B0B5973FC1620946 /* Pods_SunshineCamera_Tests.framework */,
+				4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */,
+				CD8FCE1F0B87E99BDB1EE4F5556DE829 /* SunshineCamera.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SunshineCamera";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DDFA8FF1BE3FA243E2627E30C600CFDD /* Pods-SunshineCamera_Example */ = {
@@ -236,21 +313,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		785BB3A7AA42821A266ACBD58ADF7D67 /* SunshineCamera */ = {
+		19EB1C9850FEFEB614D1BD5832992B40 /* SunshineCamera-SunshineCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCBC6ACE4C8FA08FF8CB59A38C731B89 /* Build configuration list for PBXNativeTarget "SunshineCamera" */;
+			buildConfigurationList = 47ACEBDD7D7112660943B40E2F9926BF /* Build configuration list for PBXNativeTarget "SunshineCamera-SunshineCamera" */;
 			buildPhases = (
-				C6EEBACAF548655F986A4242C20A99F2 /* Sources */,
-				5588385058ADF69E8575E0C193A796A6 /* Frameworks */,
-				6DD8930C2B5F0F1972FD70C15DA48C09 /* Headers */,
+				38C469ACC6E6B4202117C05D724CA19F /* Sources */,
+				B113B9E57479387090361C194228998F /* Frameworks */,
+				BBEAF46213EC4C11DFCAFE3A8F1684DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "SunshineCamera-SunshineCamera";
+			productName = "SunshineCamera-SunshineCamera";
+			productReference = 4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		785BB3A7AA42821A266ACBD58ADF7D67 /* SunshineCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBC6ACE4C8FA08FF8CB59A38C731B89 /* Build configuration list for PBXNativeTarget "SunshineCamera" */;
+			buildPhases = (
+				3E57531DD1CF777C1ABB59D7AD5E26D9 /* Sources */,
+				8461369188CD96F99A84FABC7C9D842E /* Frameworks */,
+				76501A14B760AC5E111F166AD4D62504 /* Resources */,
+				6DD8930C2B5F0F1972FD70C15DA48C09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1765953EDCBE0A70985B17C168467E34 /* PBXTargetDependency */,
+			);
 			name = SunshineCamera;
 			productName = SunshineCamera;
-			productReference = C10452FCBA82C2C6572261B5A2467D0E /* SunshineCamera.framework */;
+			productReference = CD8FCE1F0B87E99BDB1EE4F5556DE829 /* SunshineCamera.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B153A4D38AEA5839685084DC608A5A21 /* Pods-SunshineCamera_Example */ = {
@@ -268,7 +364,7 @@
 			);
 			name = "Pods-SunshineCamera_Example";
 			productName = "Pods-SunshineCamera_Example";
-			productReference = 25B12659C1981F7C1A9AE778826898E8 /* Pods_SunshineCamera_Example.framework */;
+			productReference = 461E8F8256AAB6DF23245D9E9AC0724A /* Pods_SunshineCamera_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3868D9E3F71222FCA45F6A8FDD2BBB8 /* Pods-SunshineCamera_Tests */ = {
@@ -285,7 +381,7 @@
 			);
 			name = "Pods-SunshineCamera_Tests";
 			productName = "Pods-SunshineCamera_Tests";
-			productReference = 9E320107C8A125F286982894B45B7BF5 /* Pods_SunshineCamera_Tests.framework */;
+			productReference = 0750F699F8984B59B0B5973FC1620946 /* Pods_SunshineCamera_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -305,32 +401,72 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 46AF03CBC844E22876AF432DD2BE477C /* Products */;
+			productRefGroup = D19CB6F8B1610101831009A82AEE9359 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B153A4D38AEA5839685084DC608A5A21 /* Pods-SunshineCamera_Example */,
 				F3868D9E3F71222FCA45F6A8FDD2BBB8 /* Pods-SunshineCamera_Tests */,
 				785BB3A7AA42821A266ACBD58ADF7D67 /* SunshineCamera */,
+				19EB1C9850FEFEB614D1BD5832992B40 /* SunshineCamera-SunshineCamera */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		76501A14B760AC5E111F166AD4D62504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1439751549FFF80002B658F4368954 /* SunshineCamera.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBEAF46213EC4C11DFCAFE3A8F1684DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1311C849DAFEA67D9F614DC5EB36C6E9 /* camera_btn_switchcamera@2x.png in Resources */,
+				B91ED2E2C28DB528F9EF0AAC9F524B33 /* camera_btn_switchcamera@3x.png in Resources */,
+				356C927B0D5E07204215CD088591BC99 /* camera_topbar_btn_close@2x.png in Resources */,
+				33549A50EE833A52DF62E671CF533B01 /* camera_topbar_btn_close@3x.png in Resources */,
+				E81D8D59B420083769D3BFE066ED64C2 /* camera_topbar_btn_flash_n@2x.png in Resources */,
+				F1C5568CC54B45410A53A2CA168BA644 /* camera_topbar_btn_flash_n@3x.png in Resources */,
+				2E6735715CD6E53316ABAE71ACED4A09 /* camera_topbar_btn_flash_off@2x.png in Resources */,
+				499BBFBB72896D4268CB8B8621862D30 /* camera_topbar_btn_flash_off@3x.png in Resources */,
+				7A870C8A83042E63D403AECE0A2FCD72 /* PhotoCaptureController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		38C469ACC6E6B4202117C05D724CA19F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E57531DD1CF777C1ABB59D7AD5E26D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA80AF585689381EBF014BD424FD7E81 /* BottomBar.swift in Sources */,
+				E5C4C80F7D44D05CBAFC86427B6CAD26 /* Bundle+Extension.swift in Sources */,
+				C7D78D848A0DFB189E2355260302F347 /* Debuglog.swift in Sources */,
+				DE37D530DE3A199067B5D60A6C2F3D83 /* PhotoCaptrueController.swift in Sources */,
+				BE9E94F8ECEC967C7A9A1C7320995B64 /* PhotoCaptureView.swift in Sources */,
+				96B86D05879EE776F2A6C69C1552C3D4 /* SunshineCamera-dummy.m in Sources */,
+				61A1149C864A1F1A5C89C6B845E8203C /* TopBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5535A03175BF6B1A6100DFE48F1E099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				051DE26A301A105F672D54882030E59E /* Pods-SunshineCamera_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6EEBACAF548655F986A4242C20A99F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				824BDFFBB434F41673A2209F8C39C6B0 /* ReplaceMe.swift in Sources */,
-				2888F785AC477448819ACCBE26F3A823 /* SunshineCamera-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +481,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1765953EDCBE0A70985B17C168467E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SunshineCamera-SunshineCamera";
+			target = 19EB1C9850FEFEB614D1BD5832992B40 /* SunshineCamera-SunshineCamera */;
+			targetProxy = C6ED66BF2E20825612C9254D3A731C28 /* PBXContainerItemProxy */;
+		};
 		BCB3E2932F42D208974767A5E3C5C82D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SunshineCamera;
@@ -429,9 +571,26 @@
 			};
 			name = Debug;
 		};
+		6E150843E48DC1A319374C007BC9F8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SunshineCamera";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SunshineCamera/ResourceBundle-SunshineCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SunshineCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		7105B93C9EFE5730735080B8A0455145 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49A419D7F0CBE6597565894E7531EBE8 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -633,7 +792,7 @@
 		};
 		E53CFA67E2C62B0C815E1E990515EB85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49A419D7F0CBE6597565894E7531EBE8 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -666,6 +825,23 @@
 			};
 			name = Debug;
 		};
+		F2278DF2D6E331CD78B262B2DE0A1590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD9065534CC245CC0F6403F47B6CCD8 /* SunshineCamera.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SunshineCamera";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SunshineCamera/ResourceBundle-SunshineCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SunshineCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +859,15 @@
 			buildConfigurations = (
 				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
 				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47ACEBDD7D7112660943B40E2F9926BF /* Build configuration list for PBXNativeTarget "SunshineCamera-SunshineCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2278DF2D6E331CD78B262B2DE0A1590 /* Debug */,
+				6E150843E48DC1A319374C007BC9F8FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

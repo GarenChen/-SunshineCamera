@@ -32,11 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SunshineCamera/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SunshineCamera' => ['SunshineCamera/Assets/*.png']
-  # }
+  s.resource_bundles = {
+	'SunshineCamera' => ['SunshineCamera/Assets/*.png', 'SunshineCamera/Assets/*.storyboard']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
