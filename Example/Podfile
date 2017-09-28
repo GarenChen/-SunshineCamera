@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SunshineCamera_Example' do
+  pod 'SunshineCamera', :path => '../'
+
+  target 'SunshineCamera_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
