@@ -1,6 +1,6 @@
 //
 //  PhotoCaptureView.swift
-//  Pods
+//  SunshineCamera
 //
 //  Created by Garen on 2017/9/28.
 //
@@ -18,7 +18,33 @@ open class PhotoCaptureView: UIView {
 	
 	public var cropFrame: CGRect = .zero
 	
-	public var cropDescription: String = ""
+	public var cropDescription: String?
+    
+    public var isCameraPositionFront: Bool = false {
+        didSet {
+            setCameraPosition(isFront: isCameraPositionFront)
+        }
+    }
+    public var flashMode: AVCaptureFlashMode = .auto {
+        didSet {
+            guard let inputs = self.previewLayer.session.inputs else {
+                return
+            }
+            inputs.forEach { (input) in
+                guard let input = input as? AVCaptureDeviceInput, input.device.hasMediaType(AVMediaTypeVideo) else {
+                    return
+                }
+                do {
+                    try input.device.lockForConfiguration()
+                    input.device.flashMode = flashMode
+                    input.device.unlockForConfiguration()
+                } catch let error {
+                    debuglog("Error when setting input device flashMode: \(error)")
+                    return
+                }
+            }
+        }
+    }
 	
 	private lazy var session: AVCaptureSession = { [unowned self] in
 		let sesssion = AVCaptureSession()
@@ -37,7 +63,7 @@ open class PhotoCaptureView: UIView {
 		}
 		do {
 			try device.lockForConfiguration()
-			device.flashMode = AVCaptureFlashMode.auto
+			device.flashMode = self.flashMode
 			device.unlockForConfiguration()
 			let input = try AVCaptureDeviceInput(device: device)
 			return input
@@ -69,7 +95,7 @@ open class PhotoCaptureView: UIView {
 	}()
 	
 	private lazy var cropView: UIView = { [unowned self] in
-		let cropView = UIView(frame: self.cropFrame == .zero ? self.bounds : self.cropFrame)
+		let cropView = UIView(frame: self.cropFrame)
 		cropView.layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
 		cropView.layer.borderWidth = 1
 		return cropView
@@ -96,9 +122,9 @@ open class PhotoCaptureView: UIView {
 	
 	private func setupView() {
 		layer.addSublayer(previewLayer)
-		addSubview(overlayView)
-		addSubview(cropView)
-		addSubview(descriptionLabel)
+        addSubview(overlayView)
+        addSubview(cropView)
+        addSubview(descriptionLabel)
 	}
 	
 	private func getCaptureOrientation(from deviceOrientation: UIDeviceOrientation) -> AVCaptureVideoOrientation {
@@ -114,17 +140,16 @@ open class PhotoCaptureView: UIView {
 		}
 	}
 	
-	func startRunning() {
-		self.session.startRunning()
+	public func startRunning() {
+		session.startRunning()
 	}
 	
-	func stopRunning() {
-		self.session.stopRunning()
+	public func stopRunning() {
+		session.stopRunning()
 	}
 	
-	func setCameraPosition(isFront: Bool) {
+	private func setCameraPosition(isFront: Bool) {
 		let cameraPosition: AVCaptureDevicePosition = isFront ? .front : .back
-		
 		let device = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo)?.first(where: { (device) -> Bool in
 			guard let captureDevice = device as? AVCaptureDevice, captureDevice.position == cameraPosition else {
 				return false
@@ -150,7 +175,7 @@ open class PhotoCaptureView: UIView {
 		self.previewLayer.session.commitConfiguration()
 	}
 	
-	func takePhoto() {
+	public func takePhoto() {
 		
 		let imageConnection = output.connection(withMediaType: AVMediaTypeVideo)
 		
@@ -174,11 +199,15 @@ open class PhotoCaptureView: UIView {
 				return
 			}
 			
-			guard let image = UIImage(data: jpegData) else {
+			guard let fullImage = UIImage(data: jpegData) else {
 				debuglog("Error when transform jpegData to UIImage: jpegData: \(jpegData)")
 				return
 			}
-			
+
+            guard let image = self.cropImage(fullImage, rect: self.cropFrame != .zero ? self.cropFrame : self.frame) else {
+                return
+            }
+
 			self.didFinishTakePhoto?(image)
 			
 			if self.shouldSaveToAlbum {
@@ -196,5 +225,22 @@ open class PhotoCaptureView: UIView {
 			}
 		}
 	}
+
+    private func cropImage(_ image: UIImage, rect: CGRect) -> UIImage? {
+        
+        UIGraphicsBeginImageContext(rect.size)
+        image.draw(in: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = scaledImage?.cgImage else {
+            return nil
+        }
+        guard let newImage = cgImage.cropping(to: rect) else {
+            return nil
+        }
+        let resultImage = UIImage(cgImage: newImage)
+        return resultImage
+    }
 	
 }

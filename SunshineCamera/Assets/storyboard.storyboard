@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Captrue Controller-->
+        <!--Photo Capture Controller-->
         <scene sceneID="4UW-w1-xVc">
             <objects>
-                <viewController storyboardIdentifier="PhotoCaptrueController" id="KyI-u5-tfX" customClass="PhotoCaptrueController" customModule="SunshineCamera" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoCaptureController" id="KyI-u5-tfX" customClass="PhotoCaptureController" customModule="SunshineCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2lb-M5-oqR"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ki-V7-t5f"/>
@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bm-de-Jfl" customClass="PhotoCaptureView" customModule="SunshineCamera" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="vUN-Ww-Ggj">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUN-Ww-Ggj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pgQ-MU-G8L"/>
@@ -33,23 +33,26 @@
                                 <items>
                                     <barButtonItem image="camera_topbar_btn_close.png" id="YKg-NP-e1l">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="clickCancelButton:" destination="KyI-u5-tfX" id="Rz6-dE-wB1"/>
+                                        </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Zeu-ok-TG1"/>
-                                    <barButtonItem title="Item" id="lj4-qX-qXs"/>
-                                    <barButtonItem title="Item" id="H6V-8L-w3e"/>
-                                    <barButtonItem title="Item" id="R0A-hi-fLh"/>
-                                    <barButtonItem title="Item" id="Vju-EP-zEQ"/>
                                 </items>
                             </toolbar>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUh-C3-h99">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUh-C3-h99">
                                 <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CP0-Qk-rsB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CP0-Qk-rsB">
                                         <rect key="frame" x="162" y="25" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="9hR-Ug-uPe"/>
                                             <constraint firstAttribute="width" constant="50" id="IvQ-jZ-Vec"/>
                                         </constraints>
+                                        <state key="normal" image="camera_btn_capture_n.png"/>
+                                        <state key="highlighted" image="camera_btn_capture_h.png"/>
+                                        <connections>
+                                            <action selector="clickTakePhotoButton:" destination="KyI-u5-tfX" eventType="touchUpInside" id="kCl-Hh-nw2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvt-Qt-8Bl">
                                         <rect key="frame" x="15" y="33" width="37" height="34"/>
@@ -57,16 +60,23 @@
                                         <state key="normal" title="重拍">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickLeftBottomButton:" destination="KyI-u5-tfX" eventType="touchUpInside" id="syY-3T-FBC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiE-BB-Uaf">
                                         <rect key="frame" x="323" y="33" width="37" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="确定">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clickRightBottomButton:" destination="KyI-u5-tfX" eventType="touchUpInside" id="CLu-UU-mTX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="SiE-BB-Uaf" firstAttribute="centerY" secondItem="CUh-C3-h99" secondAttribute="centerY" id="8cp-3F-OeE"/>
                                     <constraint firstItem="Lvt-Qt-8Bl" firstAttribute="centerY" secondItem="CUh-C3-h99" secondAttribute="centerY" id="8da-LN-hKB"/>
@@ -80,15 +90,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="0Bm-de-Jfl" secondAttribute="bottom" id="2Yc-Wf-5LA"/>
                             <constraint firstAttribute="trailing" secondItem="vUN-Ww-Ggj" secondAttribute="trailing" id="43Q-do-wxw"/>
                             <constraint firstItem="0Bm-de-Jfl" firstAttribute="leading" secondItem="ZwV-3s-d68" secondAttribute="leading" id="7CJ-Vy-jsX"/>
+                            <constraint firstAttribute="bottom" secondItem="0Bm-de-Jfl" secondAttribute="bottom" id="8IM-Ov-Sco"/>
                             <constraint firstItem="vUN-Ww-Ggj" firstAttribute="top" secondItem="ZwV-3s-d68" secondAttribute="top" id="Gag-8F-za8"/>
                             <constraint firstItem="CUh-C3-h99" firstAttribute="leading" secondItem="ZwV-3s-d68" secondAttribute="leading" id="Qky-lN-vig"/>
+                            <constraint firstItem="0Bm-de-Jfl" firstAttribute="top" secondItem="ZwV-3s-d68" secondAttribute="top" constant="20" symbolic="YES" id="VVX-sz-kpO"/>
                             <constraint firstAttribute="trailing" secondItem="CUh-C3-h99" secondAttribute="trailing" id="aa3-qr-uHQ"/>
                             <constraint firstAttribute="trailing" secondItem="0Bm-de-Jfl" secondAttribute="trailing" id="dxa-d9-AxY"/>
                             <constraint firstItem="vUN-Ww-Ggj" firstAttribute="leading" secondItem="ZwV-3s-d68" secondAttribute="leading" id="hm1-gx-YTY"/>
-                            <constraint firstItem="0Bm-de-Jfl" firstAttribute="top" secondItem="ZwV-3s-d68" secondAttribute="top" id="i14-G6-5kz"/>
                             <constraint firstAttribute="bottom" secondItem="CUh-C3-h99" secondAttribute="bottom" id="nRK-sb-aC3"/>
                         </constraints>
                     </view>
@@ -96,7 +106,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cancelButton" destination="YKg-NP-e1l" id="5WH-Zt-hEF"/>
+                        <outlet property="leftBottomButton" destination="Lvt-Qt-8Bl" id="0Qy-FU-pBw"/>
+                        <outlet property="photoCaptureView" destination="0Bm-de-Jfl" id="EJQ-yF-VRF"/>
+                        <outlet property="rightBottomButton" destination="SiE-BB-Uaf" id="6wG-e8-BMc"/>
+                        <outlet property="takePhotoButton" destination="CP0-Qk-rsB" id="7B7-dj-wr7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSb-Yf-BXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,6 +118,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera_btn_capture_h.png" width="66" height="66"/>
+        <image name="camera_btn_capture_n.png" width="66" height="66"/>
         <image name="camera_topbar_btn_close.png" width="24" height="24"/>
     </resources>
 </document>
