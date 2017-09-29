@@ -8,35 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		051DE26A301A105F672D54882030E59E /* Pods-SunshineCamera_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F14BFF89F5DC13FB46109C17EE4E43EA /* Pods-SunshineCamera_Tests-dummy.m */; };
-		0A5B95452C2E62E7B0EEB9D0DD70CBA3 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86309CC164D631DB155BA9FC0417E9A0 /* BottomBar.swift */; };
-		3E1942B232C0F470006818E7ACD0F576 /* camera_topbar_btn_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FA01C864D4ED66DC318DF26BA39D6 /* camera_topbar_btn_flash_off@2x.png */; };
-		408623542A4CD1E25B70F27F2CF633CE /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD89DE09733F3A1F9D967B85584DF3A /* PhotoCaptureView.swift */; };
-		4543DDB7FCB38A2A6CA1F03FB8580B12 /* storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5F1CF70B62B32DA7E40A20F6A3FB6 /* storyboard.storyboard */; };
-		469883F65A8F6E192336F46328AFC1E3 /* camera_btn_capture_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B8C95150D656EC3F3DC8D1094D6CE26 /* camera_btn_capture_h@3x.png */; };
+		3E1942B232C0F470006818E7ACD0F576 /* camera_topbar_btn_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DF504870A3C9134ECB7E65D1698359 /* camera_topbar_btn_flash_off@2x.png */; };
+		4543DDB7FCB38A2A6CA1F03FB8580B12 /* storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB22015C2A23B47BB22DB7BD87598D9 /* storyboard.storyboard */; };
+		469883F65A8F6E192336F46328AFC1E3 /* camera_btn_capture_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11AF5573DB285B097B3B9B2910A019C3 /* camera_btn_capture_h@3x.png */; };
 		481BCB6187AD322BE1A363B61C647C2F /* Pods-SunshineCamera_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AED133068B400F0C66038BE95EB852B3 /* Pods-SunshineCamera_Example-dummy.m */; };
-		4BED5BE9F3933A7FB64B6660F242974A /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3695326E425B8F63863709DA3C02C /* PhotoCaptureController.swift */; };
-		4E401A3E77C5D29FDB547E62E938C6F3 /* camera_btn_switchcamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45302E16FA6071A08FE93237F0FC6E13 /* camera_btn_switchcamera@3x.png */; };
-		550209B50BE4BA4BE15B114B6D91C589 /* camera_topbar_btn_flash_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A624312E495EDD1B5EF15EB0CA48ECD /* camera_topbar_btn_flash_off@3x.png */; };
-		6497C17BAE80F2D8EA172A9BEC2A037E /* camera_btn_capture_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB4EB20D07A3AD3A97076D5DAF7CE1D /* camera_btn_capture_h@2x.png */; };
-		768F5E8E102E0070E109C9A4F206D170 /* camera_btn_capture_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 024690E85AA612E6E23899E01C981605 /* camera_btn_capture_n@3x.png */; };
-		7762ECDA3CD5E4EE6B5B8E99422470A3 /* camera_topbar_btn_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C58024C6E6B4F8CB283DE69B43377DB /* camera_topbar_btn_close@2x.png */; };
+		4E401A3E77C5D29FDB547E62E938C6F3 /* camera_btn_switchcamera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07480D7ABA996988D2E8414975CD7388 /* camera_btn_switchcamera@3x.png */; };
+		550209B50BE4BA4BE15B114B6D91C589 /* camera_topbar_btn_flash_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6696EFB4053463F03E55F89A1D25C3E /* camera_topbar_btn_flash_off@3x.png */; };
+		550E9A9D36A86E05529739DEE4BD83A7 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D71EB591E38D62DA6158B92DEB561 /* Bundle+Extension.swift */; };
+		6497C17BAE80F2D8EA172A9BEC2A037E /* camera_btn_capture_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6168661AE5AAA2B2C1292561A078C03B /* camera_btn_capture_h@2x.png */; };
+		768F5E8E102E0070E109C9A4F206D170 /* camera_btn_capture_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E9A9E08A3DA0A0888C2E2B1EF6DC7E /* camera_btn_capture_n@3x.png */; };
+		7762ECDA3CD5E4EE6B5B8E99422470A3 /* camera_topbar_btn_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BE0B992F8E2CDAE5C5A3AEFAC404B25 /* camera_topbar_btn_close@2x.png */; };
 		7947847099C8213DCAF91F483D48D18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
-		81C888F0C4723519E197D5FB047B2EFF /* Debuglog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EFABDE7DD7E5E736D86838BEB3E4A6 /* Debuglog.swift */; };
+		7F75F5271D6B836F6988A00D98270C78 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1963C1C30203AF548B579EBC8B287BD /* PhotoCaptureView.swift */; };
 		892F7552D6442A5D921ECCE203090859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
-		90B8C8DD50CB5707207577409A62C0D1 /* camera_topbar_btn_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EEAA5CA4CA8283737339AE0AB0605F /* camera_topbar_btn_close@3x.png */; };
-		97C2E68B1D77753F896B378C119F4BFC /* SunshineCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A47DC37BA2BAE1D9B727D78259983677 /* SunshineCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97DF678128BE2C830D715E6D0E542D13 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDE9B8B9DF5047B3F593F9CFFE2E6D0 /* TopBar.swift */; };
+		90B8C8DD50CB5707207577409A62C0D1 /* camera_topbar_btn_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1024049100B70CDD8EB58E5AF4A9C066 /* camera_topbar_btn_close@3x.png */; };
+		9198087CF3319740A5824A34625025C7 /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F65F9F6E5B8C94BEC860B893649DA7 /* PhotoCaptureController.swift */; };
+		97C2E68B1D77753F896B378C119F4BFC /* SunshineCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88811548CC39DF1215A6638C6CD7DFD7 /* SunshineCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		989CEF0AA568B44CC5EA433CE57AA53C /* SunshineCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C7CBB2438B924C3B69682243173798 /* SunshineCamera-dummy.m */; };
 		A9AFA4719D47F0DFB7D126B5B564B81E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8436533CEC029288113A22556AA9D09 /* MapKit.framework */; };
-		C04CACDDCD2F50253A30BE7BBA2F2B85 /* camera_btn_capture_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E41698AA6EDC59C2BE7DE53ADC177602 /* camera_btn_capture_n@2x.png */; };
-		C3353B802EA9E7C5B4A85895F8B5FD0B /* camera_btn_switchcamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C63AF45E6D1A5302768A4DEB9712F20 /* camera_btn_switchcamera@2x.png */; };
-		CDBAAA5601DF5356015C2584C951E006 /* SunshineCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A7C0F2D03E0B6A936FD7C9EFE1317 /* SunshineCamera-dummy.m */; };
-		CFB7B72941FDB1F2A40CC58273AFB260 /* camera_topbar_btn_flash_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 672558BAC7EB6C4935348B69EC8B3CB4 /* camera_topbar_btn_flash_n@2x.png */; };
+		C04CACDDCD2F50253A30BE7BBA2F2B85 /* camera_btn_capture_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FA2C783DA2328D9E435BA8C710C905 /* camera_btn_capture_n@2x.png */; };
+		C3353B802EA9E7C5B4A85895F8B5FD0B /* camera_btn_switchcamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17ED2146140F5257B566B9C125A46C7D /* camera_btn_switchcamera@2x.png */; };
+		CFB7B72941FDB1F2A40CC58273AFB260 /* camera_topbar_btn_flash_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4407503AF18EC1EDACD4EA1C1E9DDB29 /* camera_topbar_btn_flash_n@2x.png */; };
 		D70406B019D9319894075E698EF96FC2 /* Pods-SunshineCamera_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F8945462F27D84449CD9040CC2262B /* Pods-SunshineCamera_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E486A7DFB8900F8D3EE4A2B230EB7759 /* Pods-SunshineCamera_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2E934D0D649C9800B8540FAAE2CD14 /* Pods-SunshineCamera_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E492A3F4D4E288B1199175DA2D7B9AEB /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B623619E1F846FA2BAF02F2CB3FFD394 /* Bundle+Extension.swift */; };
 		EE1439751549FFF80002B658F4368954 /* SunshineCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */; };
+		F475BB5F01DB0A2C7FDFD00BB378FE92 /* Debuglog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576935B0A8DF3678E4BBAC282ADCFB68 /* Debuglog.swift */; };
 		F71AE9916248868B202F5E6DF3E29C3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */; };
-		F85F80E343EEC0C6288DF662292F6861 /* camera_topbar_btn_flash_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8956B29FDA25AB153F3B11926A9363 /* camera_topbar_btn_flash_n@3x.png */; };
+		F85F80E343EEC0C6288DF662292F6861 /* camera_topbar_btn_flash_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7DF30FE8E5C452E13393B15DFFB5D1 /* camera_topbar_btn_flash_n@3x.png */; };
 		F9DB5D92FE161EE3785C4BC67366DF42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,59 +56,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineCamera.xcconfig; sourceTree = "<group>"; };
-		024690E85AA612E6E23899E01C981605 /* camera_btn_capture_n@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_n@3x.png"; path = "SunshineCamera/Assets/camera_btn_capture_n@3x.png"; sourceTree = "<group>"; };
+		07480D7ABA996988D2E8414975CD7388 /* camera_btn_switchcamera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@3x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@3x.png"; sourceTree = "<group>"; };
 		0750F699F8984B59B0B5973FC1620946 /* Pods_SunshineCamera_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Tests.framework; path = "Pods-SunshineCamera_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DC5F1CF70B62B32DA7E40A20F6A3FB6 /* storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = storyboard.storyboard; path = SunshineCamera/Assets/storyboard.storyboard; sourceTree = "<group>"; };
-		1A624312E495EDD1B5EF15EB0CA48ECD /* camera_topbar_btn_flash_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@3x.png"; sourceTree = "<group>"; };
-		1B8C95150D656EC3F3DC8D1094D6CE26 /* camera_btn_capture_h@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_h@3x.png"; path = "SunshineCamera/Assets/camera_btn_capture_h@3x.png"; sourceTree = "<group>"; };
+		1024049100B70CDD8EB58E5AF4A9C066 /* camera_topbar_btn_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@3x.png"; sourceTree = "<group>"; };
+		10E60EC796A02AF1F44D416C9B949051 /* SunshineCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineCamera.modulemap; sourceTree = "<group>"; };
+		11AF5573DB285B097B3B9B2910A019C3 /* camera_btn_capture_h@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_h@3x.png"; path = "SunshineCamera/Assets/camera_btn_capture_h@3x.png"; sourceTree = "<group>"; };
+		17ED2146140F5257B566B9C125A46C7D /* camera_btn_switchcamera@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@2x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@2x.png"; sourceTree = "<group>"; };
 		21A9713B067284F83DA49ACB9A970D0D /* Pods-SunshineCamera_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		25C7CBB2438B924C3B69682243173798 /* SunshineCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineCamera-dummy.m"; sourceTree = "<group>"; };
 		26F8945462F27D84449CD9040CC2262B /* Pods-SunshineCamera_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineCamera_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2852E352B0715CA6C0B50CBD631CC87B /* Pods-SunshineCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2AA751FF929C47F26D32196DBAB931D0 /* Pods-SunshineCamera_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Example-resources.sh"; sourceTree = "<group>"; };
-		2C63AF45E6D1A5302768A4DEB9712F20 /* camera_btn_switchcamera@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@2x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@2x.png"; sourceTree = "<group>"; };
+		2BE0B992F8E2CDAE5C5A3AEFAC404B25 /* camera_topbar_btn_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@2x.png"; sourceTree = "<group>"; };
 		2F309F3BAAA67B1437E8076E8390123B /* Pods-SunshineCamera_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Example-frameworks.sh"; sourceTree = "<group>"; };
 		35CA5E7DF6A75D22F87B1FC72B15A878 /* Pods-SunshineCamera_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineCamera_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3BF404661DBA1E32FB117A7DDDE4DDF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45302E16FA6071A08FE93237F0FC6E13 /* camera_btn_switchcamera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_switchcamera@3x.png"; path = "SunshineCamera/Assets/camera_btn_switchcamera@3x.png"; sourceTree = "<group>"; };
+		4407503AF18EC1EDACD4EA1C1E9DDB29 /* camera_topbar_btn_flash_n@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@2x.png"; sourceTree = "<group>"; };
 		461E8F8256AAB6DF23245D9E9AC0724A /* Pods_SunshineCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineCamera_Example.framework; path = "Pods-SunshineCamera_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7DF30FE8E5C452E13393B15DFFB5D1 /* camera_topbar_btn_flash_n@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@3x.png"; sourceTree = "<group>"; };
 		4D9A14776CCD6E382D176A44F45836C3 /* SunshineCamera.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SunshineCamera.bundle; path = SunshineCamera.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		576935B0A8DF3678E4BBAC282ADCFB68 /* Debuglog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debuglog.swift; path = SunshineCamera/Classes/Debuglog.swift; sourceTree = "<group>"; };
 		58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5C58024C6E6B4F8CB283DE69B43377DB /* camera_topbar_btn_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@2x.png"; sourceTree = "<group>"; };
+		58DF504870A3C9134ECB7E65D1698359 /* camera_topbar_btn_flash_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@2x.png"; sourceTree = "<group>"; };
 		5D2E934D0D649C9800B8540FAAE2CD14 /* Pods-SunshineCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineCamera_Example-umbrella.h"; sourceTree = "<group>"; };
-		614740CED8E20E34349D0450341B18F9 /* ResourceBundle-SunshineCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SunshineCamera-Info.plist"; sourceTree = "<group>"; };
-		63EEAA5CA4CA8283737339AE0AB0605F /* camera_topbar_btn_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_close@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_close@3x.png"; sourceTree = "<group>"; };
-		672558BAC7EB6C4935348B69EC8B3CB4 /* camera_topbar_btn_flash_n@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@2x.png"; sourceTree = "<group>"; };
+		5DC1E1701A7EEEB809A9752C0362F7F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineCamera.xcconfig; sourceTree = "<group>"; };
+		6168661AE5AAA2B2C1292561A078C03B /* camera_btn_capture_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_h@2x.png"; path = "SunshineCamera/Assets/camera_btn_capture_h@2x.png"; sourceTree = "<group>"; };
+		639D71EB591E38D62DA6158B92DEB561 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "SunshineCamera/Classes/Bundle+Extension.swift"; sourceTree = "<group>"; };
 		67C858D72E41FDCBE57FCA3A74400D80 /* Pods-SunshineCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineCamera_Example.modulemap"; sourceTree = "<group>"; };
-		773BA9AD7D161471744A95A43F33F3FE /* SunshineCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineCamera.modulemap; sourceTree = "<group>"; };
-		86309CC164D631DB155BA9FC0417E9A0 /* BottomBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomBar.swift; path = SunshineCamera/Classes/BottomBar.swift; sourceTree = "<group>"; };
+		811C1A48F334ED707B94BDB9DBDE2B19 /* SunshineCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-prefix.pch"; sourceTree = "<group>"; };
+		82F65F9F6E5B8C94BEC860B893649DA7 /* PhotoCaptureController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptureController.swift; path = SunshineCamera/Classes/PhotoCaptureController.swift; sourceTree = "<group>"; };
 		8656106DA2FDDE12F8E8567672374E09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86EDB0D4FC9897974B211E3399DF6B63 /* Pods-SunshineCamera_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineCamera_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8B7FA01C864D4ED66DC318DF26BA39D6 /* camera_topbar_btn_flash_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@2x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@2x.png"; sourceTree = "<group>"; };
+		88811548CC39DF1215A6638C6CD7DFD7 /* SunshineCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-umbrella.h"; sourceTree = "<group>"; };
 		90BC81576A1DD6BE10B207976C627A9F /* Pods-SunshineCamera_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineCamera_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90FA2C783DA2328D9E435BA8C710C905 /* camera_btn_capture_n@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_n@2x.png"; path = "SunshineCamera/Assets/camera_btn_capture_n@2x.png"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97E3695326E425B8F63863709DA3C02C /* PhotoCaptureController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptureController.swift; path = SunshineCamera/Classes/PhotoCaptureController.swift; sourceTree = "<group>"; };
-		A47DC37BA2BAE1D9B727D78259983677 /* SunshineCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-umbrella.h"; sourceTree = "<group>"; };
-		AE68AD1118214ABD454A7C7BB02EBD95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB72686110758E4BDCA48FE1BA7BA69A /* ResourceBundle-SunshineCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SunshineCamera-Info.plist"; sourceTree = "<group>"; };
 		AED133068B400F0C66038BE95EB852B3 /* Pods-SunshineCamera_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineCamera_Example-dummy.m"; sourceTree = "<group>"; };
 		B004626BFED84584FCA5AB351AF824A1 /* Pods-SunshineCamera_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineCamera_Tests.modulemap"; sourceTree = "<group>"; };
-		B623619E1F846FA2BAF02F2CB3FFD394 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "SunshineCamera/Classes/Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B8436533CEC029288113A22556AA9D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		BBDE9B8B9DF5047B3F593F9CFFE2E6D0 /* TopBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBar.swift; path = SunshineCamera/Classes/TopBar.swift; sourceTree = "<group>"; };
 		BD59AE1EC3E22A9F4FF8B1D784D3F471 /* Pods-SunshineCamera_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineCamera_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C150F5F315D887621254E82C549BCD64 /* Pods-SunshineCamera_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineCamera_Tests-resources.sh"; sourceTree = "<group>"; };
-		C5EFABDE7DD7E5E736D86838BEB3E4A6 /* Debuglog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debuglog.swift; path = SunshineCamera/Classes/Debuglog.swift; sourceTree = "<group>"; };
-		CAB4EB20D07A3AD3A97076D5DAF7CE1D /* camera_btn_capture_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_h@2x.png"; path = "SunshineCamera/Assets/camera_btn_capture_h@2x.png"; sourceTree = "<group>"; };
-		CBD89DE09733F3A1F9D967B85584DF3A /* PhotoCaptureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptureView.swift; path = SunshineCamera/Classes/PhotoCaptureView.swift; sourceTree = "<group>"; };
-		CCB92F5C21FD97AC5CB75750F683C2A3 /* SunshineCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineCamera-prefix.pch"; sourceTree = "<group>"; };
-		CD2A7C0F2D03E0B6A936FD7C9EFE1317 /* SunshineCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineCamera-dummy.m"; sourceTree = "<group>"; };
 		CD8FCE1F0B87E99BDB1EE4F5556DE829 /* SunshineCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineCamera.framework; path = SunshineCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB22015C2A23B47BB22DB7BD87598D9 /* storyboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = storyboard.storyboard; path = SunshineCamera/Assets/storyboard.storyboard; sourceTree = "<group>"; };
 		CFD88AF1961C8E68E367A4F80A8D039E /* Pods-SunshineCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D1963C1C30203AF548B579EBC8B287BD /* PhotoCaptureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCaptureView.swift; path = SunshineCamera/Classes/PhotoCaptureView.swift; sourceTree = "<group>"; };
+		D5E9A9E08A3DA0A0888C2E2B1EF6DC7E /* camera_btn_capture_n@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_n@3x.png"; path = "SunshineCamera/Assets/camera_btn_capture_n@3x.png"; sourceTree = "<group>"; };
 		DBE1BB6DF42EFC2093AB9727C8C2F685 /* Pods-SunshineCamera_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E41698AA6EDC59C2BE7DE53ADC177602 /* camera_btn_capture_n@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_btn_capture_n@2x.png"; path = "SunshineCamera/Assets/camera_btn_capture_n@2x.png"; sourceTree = "<group>"; };
-		EF8956B29FDA25AB153F3B11926A9363 /* camera_topbar_btn_flash_n@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_n@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_n@3x.png"; sourceTree = "<group>"; };
 		F14BFF89F5DC13FB46109C17EE4E43EA /* Pods-SunshineCamera_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineCamera_Tests-dummy.m"; sourceTree = "<group>"; };
+		F6696EFB4053463F03E55F89A1D25C3E /* camera_topbar_btn_flash_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera_topbar_btn_flash_off@3x.png"; path = "SunshineCamera/Assets/camera_topbar_btn_flash_off@3x.png"; sourceTree = "<group>"; };
 		F79BCA5D8A3D8435C2939C44BF932558 /* Pods-SunshineCamera_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineCamera_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,45 +155,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		274858746BB11E2CD86ECE8FB9DB9AB9 /* Development Pods */ = {
+		2F6CCCFDA2F32D8DB93534711DBF0C74 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F4AFD19C742EC6A2796EACA2C35AD50 /* SunshineCamera */,
+				3A77E2CCFF254C7EDEF0210BECDF6846 /* SunshineCamera */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		2C52A9A4FB2A41572E78CE2F3D3D5DE9 /* Resources */ = {
+		3A77E2CCFF254C7EDEF0210BECDF6846 /* SunshineCamera */ = {
 			isa = PBXGroup;
 			children = (
-				CAB4EB20D07A3AD3A97076D5DAF7CE1D /* camera_btn_capture_h@2x.png */,
-				1B8C95150D656EC3F3DC8D1094D6CE26 /* camera_btn_capture_h@3x.png */,
-				E41698AA6EDC59C2BE7DE53ADC177602 /* camera_btn_capture_n@2x.png */,
-				024690E85AA612E6E23899E01C981605 /* camera_btn_capture_n@3x.png */,
-				2C63AF45E6D1A5302768A4DEB9712F20 /* camera_btn_switchcamera@2x.png */,
-				45302E16FA6071A08FE93237F0FC6E13 /* camera_btn_switchcamera@3x.png */,
-				5C58024C6E6B4F8CB283DE69B43377DB /* camera_topbar_btn_close@2x.png */,
-				63EEAA5CA4CA8283737339AE0AB0605F /* camera_topbar_btn_close@3x.png */,
-				672558BAC7EB6C4935348B69EC8B3CB4 /* camera_topbar_btn_flash_n@2x.png */,
-				EF8956B29FDA25AB153F3B11926A9363 /* camera_topbar_btn_flash_n@3x.png */,
-				8B7FA01C864D4ED66DC318DF26BA39D6 /* camera_topbar_btn_flash_off@2x.png */,
-				1A624312E495EDD1B5EF15EB0CA48ECD /* camera_topbar_btn_flash_off@3x.png */,
-				0DC5F1CF70B62B32DA7E40A20F6A3FB6 /* storyboard.storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3F4AFD19C742EC6A2796EACA2C35AD50 /* SunshineCamera */ = {
-			isa = PBXGroup;
-			children = (
-				86309CC164D631DB155BA9FC0417E9A0 /* BottomBar.swift */,
-				B623619E1F846FA2BAF02F2CB3FFD394 /* Bundle+Extension.swift */,
-				C5EFABDE7DD7E5E736D86838BEB3E4A6 /* Debuglog.swift */,
-				97E3695326E425B8F63863709DA3C02C /* PhotoCaptureController.swift */,
-				CBD89DE09733F3A1F9D967B85584DF3A /* PhotoCaptureView.swift */,
-				BBDE9B8B9DF5047B3F593F9CFFE2E6D0 /* TopBar.swift */,
-				2C52A9A4FB2A41572E78CE2F3D3D5DE9 /* Resources */,
-				BBA176E88FD3405F71CBF24F6916A580 /* Support Files */,
+				639D71EB591E38D62DA6158B92DEB561 /* Bundle+Extension.swift */,
+				576935B0A8DF3678E4BBAC282ADCFB68 /* Debuglog.swift */,
+				82F65F9F6E5B8C94BEC860B893649DA7 /* PhotoCaptureController.swift */,
+				D1963C1C30203AF548B579EBC8B287BD /* PhotoCaptureView.swift */,
+				83B8768A9E568AFB0E3F1519B52FEF34 /* Resources */,
+				E11F635A29FFC6C16AC7A78BC89D39E8 /* Support Files */,
 			);
 			name = SunshineCamera;
 			path = ../..;
@@ -217,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				274858746BB11E2CD86ECE8FB9DB9AB9 /* Development Pods */,
+				2F6CCCFDA2F32D8DB93534711DBF0C74 /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				D19CB6F8B1610101831009A82AEE9359 /* Products */,
 				7EA2348EFD98489D919642B75DEFF16B /* Targets Support Files */,
@@ -231,6 +205,26 @@
 				9878B2562555CD8D430F5F8D4FECA23F /* Pods-SunshineCamera_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		83B8768A9E568AFB0E3F1519B52FEF34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6168661AE5AAA2B2C1292561A078C03B /* camera_btn_capture_h@2x.png */,
+				11AF5573DB285B097B3B9B2910A019C3 /* camera_btn_capture_h@3x.png */,
+				90FA2C783DA2328D9E435BA8C710C905 /* camera_btn_capture_n@2x.png */,
+				D5E9A9E08A3DA0A0888C2E2B1EF6DC7E /* camera_btn_capture_n@3x.png */,
+				17ED2146140F5257B566B9C125A46C7D /* camera_btn_switchcamera@2x.png */,
+				07480D7ABA996988D2E8414975CD7388 /* camera_btn_switchcamera@3x.png */,
+				2BE0B992F8E2CDAE5C5A3AEFAC404B25 /* camera_topbar_btn_close@2x.png */,
+				1024049100B70CDD8EB58E5AF4A9C066 /* camera_topbar_btn_close@3x.png */,
+				4407503AF18EC1EDACD4EA1C1E9DDB29 /* camera_topbar_btn_flash_n@2x.png */,
+				4A7DF30FE8E5C452E13393B15DFFB5D1 /* camera_topbar_btn_flash_n@3x.png */,
+				58DF504870A3C9134ECB7E65D1698359 /* camera_topbar_btn_flash_off@2x.png */,
+				F6696EFB4053463F03E55F89A1D25C3E /* camera_topbar_btn_flash_off@3x.png */,
+				CDB22015C2A23B47BB22DB7BD87598D9 /* storyboard.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		9878B2562555CD8D430F5F8D4FECA23F /* Pods-SunshineCamera_Tests */ = {
@@ -249,21 +243,6 @@
 			);
 			name = "Pods-SunshineCamera_Tests";
 			path = "Target Support Files/Pods-SunshineCamera_Tests";
-			sourceTree = "<group>";
-		};
-		BBA176E88FD3405F71CBF24F6916A580 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE68AD1118214ABD454A7C7BB02EBD95 /* Info.plist */,
-				614740CED8E20E34349D0450341B18F9 /* ResourceBundle-SunshineCamera-Info.plist */,
-				773BA9AD7D161471744A95A43F33F3FE /* SunshineCamera.modulemap */,
-				01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */,
-				CD2A7C0F2D03E0B6A936FD7C9EFE1317 /* SunshineCamera-dummy.m */,
-				CCB92F5C21FD97AC5CB75750F683C2A3 /* SunshineCamera-prefix.pch */,
-				A47DC37BA2BAE1D9B727D78259983677 /* SunshineCamera-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SunshineCamera";
 			sourceTree = "<group>";
 		};
 		D19CB6F8B1610101831009A82AEE9359 /* Products */ = {
@@ -293,6 +272,21 @@
 			);
 			name = "Pods-SunshineCamera_Example";
 			path = "Target Support Files/Pods-SunshineCamera_Example";
+			sourceTree = "<group>";
+		};
+		E11F635A29FFC6C16AC7A78BC89D39E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DC1E1701A7EEEB809A9752C0362F7F5 /* Info.plist */,
+				AB72686110758E4BDCA48FE1BA7BA69A /* ResourceBundle-SunshineCamera-Info.plist */,
+				10E60EC796A02AF1F44D416C9B949051 /* SunshineCamera.modulemap */,
+				5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */,
+				25C7CBB2438B924C3B69682243173798 /* SunshineCamera-dummy.m */,
+				811C1A48F334ED707B94BDB9DBDE2B19 /* SunshineCamera-prefix.pch */,
+				88811548CC39DF1215A6638C6CD7DFD7 /* SunshineCamera-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SunshineCamera";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBC6ACE4C8FA08FF8CB59A38C731B89 /* Build configuration list for PBXNativeTarget "SunshineCamera" */;
 			buildPhases = (
-				9D74345AEF2D1862C9C480BBC4602298 /* Sources */,
+				C7B48226977ABBD852E30C8E534023D5 /* Sources */,
 				8461369188CD96F99A84FABC7C9D842E /* Frameworks */,
 				76501A14B760AC5E111F166AD4D62504 /* Resources */,
 				6DD8930C2B5F0F1972FD70C15DA48C09 /* Headers */,
@@ -464,25 +458,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D74345AEF2D1862C9C480BBC4602298 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A5B95452C2E62E7B0EEB9D0DD70CBA3 /* BottomBar.swift in Sources */,
-				E492A3F4D4E288B1199175DA2D7B9AEB /* Bundle+Extension.swift in Sources */,
-				81C888F0C4723519E197D5FB047B2EFF /* Debuglog.swift in Sources */,
-				4BED5BE9F3933A7FB64B6660F242974A /* PhotoCaptureController.swift in Sources */,
-				408623542A4CD1E25B70F27F2CF633CE /* PhotoCaptureView.swift in Sources */,
-				CDBAAA5601DF5356015C2584C951E006 /* SunshineCamera-dummy.m in Sources */,
-				97DF678128BE2C830D715E6D0E542D13 /* TopBar.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C5535A03175BF6B1A6100DFE48F1E099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				051DE26A301A105F672D54882030E59E /* Pods-SunshineCamera_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B48226977ABBD852E30C8E534023D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550E9A9D36A86E05529739DEE4BD83A7 /* Bundle+Extension.swift in Sources */,
+				F475BB5F01DB0A2C7FDFD00BB378FE92 /* Debuglog.swift in Sources */,
+				9198087CF3319740A5824A34625025C7 /* PhotoCaptureController.swift in Sources */,
+				7F75F5271D6B836F6988A00D98270C78 /* PhotoCaptureView.swift in Sources */,
+				989CEF0AA568B44CC5EA433CE57AA53C /* SunshineCamera-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +581,7 @@
 		};
 		6E150843E48DC1A319374C007BC9F8FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SunshineCamera";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -606,7 +598,7 @@
 		};
 		7105B93C9EFE5730735080B8A0455145 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -808,7 +800,7 @@
 		};
 		E53CFA67E2C62B0C815E1E990515EB85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -843,7 +835,7 @@
 		};
 		F2278DF2D6E331CD78B262B2DE0A1590 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01350A60C95FC0428065C02402D80DF2 /* SunshineCamera.xcconfig */;
+			baseConfigurationReference = 5EBC0206EF450F517868AAC3086543E6 /* SunshineCamera.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SunshineCamera";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

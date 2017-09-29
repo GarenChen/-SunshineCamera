@@ -233,13 +233,18 @@ open class PhotoCaptureView: UIView {
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        guard let cgImage = scaledImage?.cgImage else {
+        guard let newImage = scaledImage?.cgImage?.cropping(to: rect) else {
             return nil
         }
-        guard let newImage = cgImage.cropping(to: rect) else {
-            return nil
-        }
-        let resultImage = UIImage(cgImage: newImage)
+		
+		UIGraphicsBeginImageContext(rect.size)
+		guard  let context = UIGraphicsGetCurrentContext() else {
+			return nil
+		}
+		context.draw(newImage, in: rect)
+		let resultImage = UIImage(cgImage: newImage)
+		UIGraphicsEndImageContext()
+
         return resultImage
     }
 	
