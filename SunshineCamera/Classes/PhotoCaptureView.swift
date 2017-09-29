@@ -8,17 +8,24 @@
 
 import UIKit
 import AVFoundation
-import Photos
 
 open class PhotoCaptureView: UIView {
 	
 	public var didFinishTakePhoto: ((UIImage) -> Void)?
+
+	public var cropFrame: CGRect = .zero {
+		didSet {
+			cropView.frame = cropFrame
+			descriptionLabel.frame = CGRect(x: 0, y: self.cropFrame.maxY + 10, width: self.bounds.width, height: 20)
+			overlayClipping()
+		}
+	}
 	
-	public var shouldSaveToAlbum: Bool = true
-	
-	public var cropFrame: CGRect = .zero
-	
-	public var cropDescription: String?
+	public var cropDescription: String? {
+		didSet {
+			descriptionLabel.text = cropDescription
+		}
+	}
     
     public var isCameraPositionFront: Bool = false {
         didSet {
@@ -98,6 +105,7 @@ open class PhotoCaptureView: UIView {
 		let cropView = UIView(frame: self.cropFrame)
 		cropView.layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
 		cropView.layer.borderWidth = 1
+		cropView.clipsToBounds = true
 		return cropView
 	}()
 	
@@ -122,9 +130,14 @@ open class PhotoCaptureView: UIView {
 	
 	private func setupView() {
 		layer.addSublayer(previewLayer)
-        addSubview(overlayView)
-        addSubview(cropView)
-        addSubview(descriptionLabel)
+		setupMaskViews()
+		overlayClipping()
+	}
+	
+	private func setupMaskViews() {
+		addSubview(overlayView)
+		addSubview(cropView)
+		addSubview(descriptionLabel)
 	}
 	
 	private func getCaptureOrientation(from deviceOrientation: UIDeviceOrientation) -> AVCaptureVideoOrientation {
@@ -140,6 +153,26 @@ open class PhotoCaptureView: UIView {
 		}
 	}
 	
+	private func overlayClipping() {
+		let maskLayer = CAShapeLayer()
+		let path = CGMutablePath()
+		
+		/// left
+		path.addRect(CGRect(x: 0, y: 0, width: cropView.frame.origin.x, height: overlayView.frame.size.height))
+		
+		/// right
+		path.addRect(CGRect(x: cropView.frame.origin.x + cropView.frame.size.width, y: 0, width: overlayView.frame.size.width - cropView.frame.origin.x - cropView.frame.size.width, height: overlayView.frame.size.height))
+		
+		/// top
+		path.addRect(CGRect(x: 0, y: 0, width: overlayView.frame.size.width, height: cropView.frame.origin.y))
+		
+		/// bottom
+		path.addRect(CGRect(x: 0, y: cropView.frame.origin.y + cropView.frame.size.height, width: overlayView.frame.size.width, height: overlayView.frame.size.height - cropView.frame.origin.y + cropView.frame.size.height))
+		
+		maskLayer.path = path
+		overlayView.layer.mask = maskLayer
+	}
+
 	public func startRunning() {
 		session.startRunning()
 	}
@@ -204,47 +237,38 @@ open class PhotoCaptureView: UIView {
 				return
 			}
 
-            guard let image = self.cropImage(fullImage, rect: self.cropFrame != .zero ? self.cropFrame : self.frame) else {
+			guard let image = self.cropImage(fullImage, rect: self.cropFrame == .zero ? self.bounds : self.cropFrame) else {
                 return
             }
 
 			self.didFinishTakePhoto?(image)
-			
-			if self.shouldSaveToAlbum {
-				if PHPhotoLibrary.authorizationStatus() == .authorized {
-					UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-					return
-				}
-				PHPhotoLibrary.requestAuthorization({ (status) in
-					guard case .authorized = status else {
-						debuglog("can not access photo library")
-						return
-					}
-					UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-				})
-			}
 		}
 	}
 
     private func cropImage(_ image: UIImage, rect: CGRect) -> UIImage? {
-        
-        UIGraphicsBeginImageContext(rect.size)
-        image.draw(in: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+		
+		let baseRect = CGRect(x: 0,
+		                      y: 0,
+		                      width: UIScreen.main.bounds.size.width * UIScreen.main.scale,
+		                      height: UIScreen.main.bounds.size.height * UIScreen.main.scale)
+		
+		let targetRect = CGRect(x: rect.origin.x * UIScreen.main.scale,
+		                        y: rect.origin.y * UIScreen.main.scale,
+		                        width: rect.size.width * UIScreen.main.scale,
+		                        height: rect.size.height * UIScreen.main.scale)
+		
+        UIGraphicsBeginImageContext(baseRect.size)
+		
+        image.draw(in: baseRect)
+		
         let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        guard let newImage = scaledImage?.cgImage?.cropping(to: rect) else {
+        guard let newImage = scaledImage?.cgImage?.cropping(to: targetRect) else {
             return nil
         }
 		
-		UIGraphicsBeginImageContext(rect.size)
-		guard  let context = UIGraphicsGetCurrentContext() else {
-			return nil
-		}
-		context.draw(newImage, in: rect)
 		let resultImage = UIImage(cgImage: newImage)
-		UIGraphicsEndImageContext()
-
         return resultImage
     }
 	

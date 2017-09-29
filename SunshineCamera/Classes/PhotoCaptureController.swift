@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Photos
 
 public class PhotoCaptureController: UIViewController {
     
@@ -21,6 +22,8 @@ public class PhotoCaptureController: UIViewController {
     @IBOutlet weak private var leftBottomButton: UIButton!
     @IBOutlet weak private var takePhotoButton: UIButton!
     
+	@IBOutlet weak var previewImageView: UIImageView!
+	
     public static func initiate(photoShouldSaveToAlbum: Bool = true,
                          cropFrame: CGRect = .zero,
                          cropDescription: String? = nil,
@@ -47,19 +50,18 @@ public class PhotoCaptureController: UIViewController {
     private var isPhotoReady: Bool = false {
         didSet {
             refreshBottomBar()
+			previewImageView.isHidden = !isPhotoReady
+			previewImageView.image = image
         }
     }
-    
-    private var cameraFlashStatus: AVCaptureFlashMode = .auto {
-        didSet {
-            
-        }
-    }
-    
+	
+	public override var prefersStatusBarHidden: Bool {
+		return true
+	}
+	
     public override func viewDidLoad() {
         super.viewDidLoad()
         photoCaptureView.cropDescription = cropDescription
-        photoCaptureView.shouldSaveToAlbum = photoShouldSaveToAlbum
         photoCaptureView.cropFrame = cropFrame
         photoCaptureView.didFinishTakePhoto = { [weak self] image in
             guard let `self` = self else { return }
@@ -68,6 +70,7 @@ public class PhotoCaptureController: UIViewController {
         }
 
         refreshBottomBar()
+		setupFlashSwitch()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -114,17 +117,95 @@ public class PhotoCaptureController: UIViewController {
     
     @IBAction func clickRightBottomButton(_ sender: UIButton) {
         if isPhotoReady {
-            if image != nil {
-                didFinishTakePhoto?(image!)
-            }
-            dismiss(animated: true, completion: nil)
+			guard image != nil else {
+				dismiss(animated: true, completion: nil)
+				return
+			}
+			
+			didFinishTakePhoto?(image!)
+			dismiss(animated: true, completion: nil)
+			
+			if self.photoShouldSaveToAlbum {
+				if PHPhotoLibrary.authorizationStatus() == .authorized {
+					UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+					return
+				}
+				PHPhotoLibrary.requestAuthorization({ [weak self] (status) in
+					guard let `self` = self else { return }
+					guard case .authorized = status else {
+						debuglog("can not access photo library")
+						return
+					}
+					UIImageWriteToSavedPhotosAlbum(self.image!, nil, nil, nil)
+				})
+			}
+			
         } else {
             photoCaptureView.isCameraPositionFront = !photoCaptureView.isCameraPositionFront
         }
     }
     
-    @IBAction func clickCancelButton(_ sender: UIBarButtonItem) {
+    @IBAction func clickCancelButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
+	
+	private func setupFlashSwitch() {
+		flashMode = .auto
+		isFlashSelectedButtonsHidden = true
+	}
+	
+	@IBOutlet private weak var flashModeSwitchButton: UIButton!
+	@IBOutlet private weak var flashAutoButton: UIButton!
+	@IBOutlet private weak var flashOpenButton: UIButton!
+	@IBOutlet private weak var flashCloseButton: UIButton!
+
+	private var flashMode: AVCaptureFlashMode = .auto {
+		didSet {
+			photoCaptureView.flashMode = flashMode
+			var iconName = ""
+			switch flashMode {
+			case .auto:
+				iconName = "camera_topbar_btn_flash_n.png"
+				flashAutoButton.isSelected = true
+				flashOpenButton.isSelected = false
+				flashCloseButton.isSelected = false
+			case .on:
+				iconName = "camera_topbar_btn_flash_on.png"
+				flashAutoButton.isSelected = false
+				flashOpenButton.isSelected = true
+				flashCloseButton.isSelected = false
+			case .off:
+				iconName = "camera_topbar_btn_flash_off.png"
+				flashAutoButton.isSelected = false
+				flashOpenButton.isSelected = false
+				flashCloseButton.isSelected = true
+			}
+			flashModeSwitchButton.setImage(UIImage(named: iconName, in: Bundle.currentResourceBundle, compatibleWith: nil), for: .normal)
+		}
+	}
+	
+	private var isFlashSelectedButtonsHidden: Bool = true {
+		didSet {
+			flashAutoButton.isHidden = isFlashSelectedButtonsHidden
+			flashOpenButton.isHidden = isFlashSelectedButtonsHidden
+			flashCloseButton.isHidden = isFlashSelectedButtonsHidden
+		}
+	}
+	
+	@IBAction func clickflashSwitch(_ sender: UIButton) {
+		isFlashSelectedButtonsHidden = !isFlashSelectedButtonsHidden
+	}
+	
+	@IBAction func clickFlashAuto(_ sender: UIButton) {
+		flashMode = .auto
+	}
+	
+	@IBAction func clickFlashOpen(_ sender: UIButton) {
+		flashMode = .on
+	}
+
+	@IBAction func clickFlashClose(_ sender: UIButton) {
+		flashMode = .off
+	}
+	
 }
