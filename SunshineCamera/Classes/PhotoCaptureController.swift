@@ -13,9 +13,27 @@ import Photos
 public class PhotoCaptureController: UIViewController {
     
     var didFinishTakePhoto: ((UIImage) -> Void)?
+	
     var photoShouldSaveToAlbum: Bool = true
-    var cropFrame: CGRect = .zero
-    var cropDescription: String?
+	
+	/// 是否显示裁剪框
+	var canCropImage: Bool = true
+	
+	/// 裁剪框区域高宽比, 仅当 canCropImage 为 true 时有效， 默认为1／1.
+	/// 优先级低于 cropFrame
+	var cropHWRatio: CGFloat = 1 {
+		didSet {
+			let screenSize = UIScreen.main.bounds.size
+			cropFrame = CGRect(x: 0, y: (screenSize.height - 64 - screenSize.width * cropHWRatio) / 2, width: screenSize.width, height: screenSize.width * cropHWRatio)
+		}
+	}
+	
+	/// 裁剪框区域frame, 仅当 canCropImage 为 true 时有效.
+	/// 设置为非零frame后优先级高于 cropHWRatio
+	var cropFrame: CGRect = .zero
+	
+	/// 裁剪框下方的描述文字
+	var cropDescription: String?
     
     @IBOutlet weak private var photoCaptureView: PhotoCaptureView!
     @IBOutlet weak private var rightBottomButton: UIButton!
@@ -24,15 +42,33 @@ public class PhotoCaptureController: UIViewController {
     
 	@IBOutlet weak var previewImageView: UIImageView!
 	
+	
+    /// 初始化方法
+    ///
+    /// - Parameters:
+    ///   - photoShouldSaveToAlbum: 是否将选择的图片保存到相册
+    ///   - canCropImage: 是否显示裁剪框
+    ///   - cropHWRatio: 裁剪框高宽比, 仅当 canCropImage 为 true 时有效， 默认为1／1. 优先级低于 cropFrame
+    ///   - cropFrame: 裁剪框区域frame, 仅当 canCropImage 为 true 时有效.设置为非零frame后优先级高于 cropHWRatio
+    ///   - cropDescription: 裁剪框下方的描述文字
+    ///   - complitionHandler: 成功后回调
     public static func initiate(photoShouldSaveToAlbum: Bool = true,
-                         cropFrame: CGRect = .zero,
-                         cropDescription: String? = nil,
-                         complitionHandler:((UIImage) -> Void)?) -> PhotoCaptureController {
+                                canCropImage: Bool = true,
+                                cropHWRatio: CGFloat = 1,
+								cropFrame: CGRect = .zero,
+								cropDescription: String? = nil,
+								complitionHandler:((UIImage) -> Void)?) -> PhotoCaptureController {
         let storyboard = UIStoryboard(name: "storyboard", bundle: Bundle.currentResourceBundle)
         let controller = storyboard.instantiateViewController(withIdentifier: "PhotoCaptureController") as! PhotoCaptureController
         controller.didFinishTakePhoto = complitionHandler
         controller.photoShouldSaveToAlbum = photoShouldSaveToAlbum
-        controller.cropFrame = cropFrame
+		controller.canCropImage = canCropImage
+		controller.cropHWRatio = cropHWRatio
+		
+		if cropFrame != .zero {
+			controller.cropFrame = cropFrame
+		}
+		
         controller.cropDescription = cropDescription
         return controller
     }
@@ -62,12 +98,14 @@ public class PhotoCaptureController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         photoCaptureView.cropDescription = cropDescription
-        photoCaptureView.cropFrame = cropFrame
         photoCaptureView.didFinishTakePhoto = { [weak self] image in
             guard let `self` = self else { return }
             self.image = image
             self.isPhotoReady = true
         }
+		if canCropImage {
+			photoCaptureView.setupCropView(cropFrame: cropFrame, cropDescription: cropDescription)
+		}
 
         refreshBottomBar()
 		setupFlashSwitch()

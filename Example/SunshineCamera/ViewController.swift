@@ -27,20 +27,12 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let ctr = PhotoCaptureController
 			.initiate(photoShouldSaveToAlbum: true,
-			          cropFrame: CGRect(x: 0 ,
-			                            y: UIScreen.main.bounds.size.height / 2 - 125,
-			                            width: UIScreen.main.bounds.size.width,
-			                            height: 250),
-			          cropDescription: "请将身份证放进方框内",
+			          cropHWRatio: 0.5,
 			          complitionHandler: { [weak self] (image) in
 						
             self?.imageView.image = image
         })
-		
-//		let ctr = PhotoCaptureController.initiate { [weak self] (image) in
-//			self?.imageView.image = image
-//		}
-		
+
         present(ctr, animated: true, completion: nil)
     }
 

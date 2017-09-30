@@ -13,20 +13,6 @@ open class PhotoCaptureView: UIView {
 	
 	public var didFinishTakePhoto: ((UIImage) -> Void)?
 
-	public var cropFrame: CGRect = .zero {
-		didSet {
-			cropView.frame = cropFrame
-			descriptionLabel.frame = CGRect(x: 0, y: self.cropFrame.maxY + 10, width: self.bounds.width, height: 20)
-			overlayClipping()
-		}
-	}
-	
-	public var cropDescription: String? {
-		didSet {
-			descriptionLabel.text = cropDescription
-		}
-	}
-    
     public var isCameraPositionFront: Bool = false {
         didSet {
             setCameraPosition(isFront: isCameraPositionFront)
@@ -52,6 +38,10 @@ open class PhotoCaptureView: UIView {
             }
         }
     }
+
+	var cropFrame: CGRect = .zero
+	
+	var cropDescription: String?
 	
 	private lazy var session: AVCaptureSession = { [unowned self] in
 		let sesssion = AVCaptureSession()
@@ -128,18 +118,19 @@ open class PhotoCaptureView: UIView {
 		setupView()
 	}
 	
-	private func setupView() {
-		layer.addSublayer(previewLayer)
-		setupMaskViews()
-		overlayClipping()
-	}
-	
-	private func setupMaskViews() {
+	public func setupCropView(cropFrame: CGRect, cropDescription: String?) {
+		self.cropFrame = cropFrame
+		self.cropDescription = cropDescription
 		addSubview(overlayView)
 		addSubview(cropView)
 		addSubview(descriptionLabel)
+		overlayClipping()
 	}
-	
+
+	private func setupView() {
+		layer.addSublayer(previewLayer)
+	}
+
 	private func getCaptureOrientation(from deviceOrientation: UIDeviceOrientation) -> AVCaptureVideoOrientation {
 		switch deviceOrientation {
 		case .landscapeLeft:
