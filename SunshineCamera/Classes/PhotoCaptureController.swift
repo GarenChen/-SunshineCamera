@@ -112,10 +112,16 @@ public class PhotoCaptureController: UIViewController {
     }
     
     public override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        photoCaptureView.startRunning()
-    }
-    
+		super.viewWillAppear(animated)
+		UIApplication.shared.setStatusBarHidden(true, with: .none)
+		photoCaptureView.startRunning()
+	}
+	
+	public override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		UIApplication.shared.setStatusBarHidden(false, with: .none)
+	}
+	
     public override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         photoCaptureView.stopRunning()
