@@ -39,9 +39,11 @@ open class PhotoCaptureView: UIView {
         }
     }
 
-	var cropFrame: CGRect = .zero
+	private var canCropImage: Bool = false
 	
-	var cropDescription: String?
+	private var cropFrame: CGRect = .zero
+	
+	private var cropDescription: String?
 	
 	private lazy var session: AVCaptureSession = { [unowned self] in
 		let sesssion = AVCaptureSession()
@@ -118,7 +120,18 @@ open class PhotoCaptureView: UIView {
 		setupView()
 	}
 	
+	open override func layoutSubviews() {
+		self.previewLayer.frame = self.bounds
+		if self.canCropImage {
+			self.overlayView.frame = self.bounds
+			self.descriptionLabel.frame = CGRect(x: 0, y: self.cropFrame.maxY + 10, width: self.bounds.width, height: 20)
+			overlayClipping()
+		}
+		super.layoutSubviews()
+	}
+	
 	public func setupCropView(cropFrame: CGRect, cropDescription: String?) {
+		self.canCropImage = true
 		self.cropFrame = cropFrame
 		self.cropDescription = cropDescription
 		addSubview(overlayView)

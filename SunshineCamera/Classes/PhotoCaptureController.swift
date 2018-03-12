@@ -97,7 +97,7 @@ public class PhotoCaptureController: UIViewController {
 	
     public override func viewDidLoad() {
         super.viewDidLoad()
-        photoCaptureView.cropDescription = cropDescription
+//        photoCaptureView.cropDescription = cropDescription
         photoCaptureView.didFinishTakePhoto = { [weak self] image in
             guard let `self` = self else { return }
             self.image = image
