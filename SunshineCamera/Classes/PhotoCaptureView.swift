@@ -28,9 +28,12 @@ open class PhotoCaptureView: UIView {
                     return
                 }
                 do {
-                    try input.device.lockForConfiguration()
-                    input.device.flashMode = flashMode
-                    input.device.unlockForConfiguration()
+					if input.device.isFlashAvailable && input.device.isFlashModeSupported(flashMode) {
+						try input.device.lockForConfiguration()
+						input.device.flashMode = flashMode
+						input.device.unlockForConfiguration()
+					}
+					
                 } catch let error {
                     debuglog("Error when setting input device flashMode: \(error)")
                     return
@@ -61,9 +64,14 @@ open class PhotoCaptureView: UIView {
 			return nil
 		}
 		do {
-			try device.lockForConfiguration()
-			device.flashMode = self.flashMode
-			device.unlockForConfiguration()
+			if device.isFlashAvailable && device.isFlashModeSupported(self.flashMode) {
+				try device.lockForConfiguration()
+				device.flashMode = self.flashMode
+				device.unlockForConfiguration()
+			}
+//			try device.lockForConfiguration()
+//			device.flashMode = self.flashMode
+//			device.unlockForConfiguration()
 			let input = try AVCaptureDeviceInput(device: device)
 			return input
 		} catch let error {
