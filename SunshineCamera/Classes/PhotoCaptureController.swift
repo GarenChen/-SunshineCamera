@@ -109,6 +109,7 @@ public class PhotoCaptureController: UIViewController {
 
         refreshBottomBar()
 		setupFlashSwitch()
+		checkAuthorization()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -131,6 +132,48 @@ public class PhotoCaptureController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	public override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+//		checkAuthorization()
+	}
+	
+	private func checkAuthorization() {
+		let avStatus = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
+		switch avStatus {
+		case .authorized:
+			break
+		case .denied, .restricted:
+			DispatchQueue.main.async {
+				self.alertMessage()
+			}
+		case .notDetermined:
+			AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (granted) in
+				guard !granted else { return }
+				DispatchQueue.main.async {
+					self.alertMessage()
+				}
+			})
+		}
+	}
+	
+	private func alertMessage() {
+		let alertController = UIAlertController.init(title: "尚未获取相机的使用权限，请在设置中开启「相机」", message: nil, preferredStyle: .alert)
+		let cancelAction = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (action) in
+			self.dismiss(animated: true, completion: nil)
+		}
+		let settingAction = UIAlertAction.init(title: "前往设置", style: UIAlertActionStyle.default) { (action) in
+			if let url = URL(string: UIApplicationOpenSettingsURLString),  UIApplication.shared.canOpenURL(url) {
+				UIApplication.shared.openURL(url)
+			}
+		}
+		
+		alertController.addAction(cancelAction)
+		alertController.addAction(settingAction)
+		
+		present(alertController, animated: true, completion: nil)
+		
+	}
     
     private func refreshBottomBar() {
         if isPhotoReady {
