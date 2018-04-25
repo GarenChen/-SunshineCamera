@@ -158,18 +158,18 @@ public class PhotoCaptureController: UIViewController {
 	}
 	
 	private func alertMessage() {
-		let alertController = UIAlertController.init(title: "尚未获取相机的使用权限，请在设置中开启「相机」", message: nil, preferredStyle: .alert)
-		let cancelAction = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.cancel) { (action) in
+		let alertController = UIAlertController.init(title: "请在iphone的\"设置-隐私\"选项中，允许微信访问你的摄像头", message: nil, preferredStyle: .alert)
+		let cancelAction = UIAlertAction.init(title: "确定", style: UIAlertActionStyle.cancel) { (action) in
 			self.dismiss(animated: true, completion: nil)
 		}
-		let settingAction = UIAlertAction.init(title: "前往设置", style: UIAlertActionStyle.default) { (action) in
-			if let url = URL(string: UIApplicationOpenSettingsURLString),  UIApplication.shared.canOpenURL(url) {
-				UIApplication.shared.openURL(url)
-			}
-		}
+//        let settingAction = UIAlertAction.init(title: "前往设置", style: UIAlertActionStyle.default) { (action) in
+//            if let url = URL(string: UIApplicationOpenSettingsURLString),  UIApplication.shared.canOpenURL(url) {
+//                UIApplication.shared.openURL(url)
+//            }
+//        }
 		
 		alertController.addAction(cancelAction)
-		alertController.addAction(settingAction)
+//        alertController.addAction(settingAction)
 		
 		present(alertController, animated: true, completion: nil)
 		
@@ -212,20 +212,20 @@ public class PhotoCaptureController: UIViewController {
 			didFinishTakePhoto?(image!)
 			dismiss(animated: true, completion: nil)
 			
-			if self.photoShouldSaveToAlbum {
-				if PHPhotoLibrary.authorizationStatus() == .authorized {
-					UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-					return
-				}
-				PHPhotoLibrary.requestAuthorization({ [weak self] (status) in
-					guard let `self` = self else { return }
-					guard case .authorized = status else {
-						debuglog("can not access photo library")
-						return
-					}
-					UIImageWriteToSavedPhotosAlbum(self.image!, nil, nil, nil)
-				})
-			}
+//            if self.photoShouldSaveToAlbum {
+//                if PHPhotoLibrary.authorizationStatus() == .authorized {
+//                    UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+//                    return
+//                }
+//                PHPhotoLibrary.requestAuthorization({ [weak self] (status) in
+//                    guard let `self` = self else { return }
+//                    guard case .authorized = status else {
+//                        debuglog("can not access photo library")
+//                        return
+//                    }
+//                    UIImageWriteToSavedPhotosAlbum(self.image!, nil, nil, nil)
+//                })
+//            }
 			
         } else {
             photoCaptureView.isCameraPositionFront = !photoCaptureView.isCameraPositionFront
