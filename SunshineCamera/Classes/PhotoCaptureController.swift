@@ -158,7 +158,7 @@ public class PhotoCaptureController: UIViewController {
 	}
 	
 	private func alertMessage() {
-		let alertController = UIAlertController.init(title: "请在iphone的\"设置-隐私\"选项中，允许访问你的摄像头", message: nil, preferredStyle: .alert)
+		let alertController = UIAlertController.init(title: "请在iphone的\"设置-隐私\"选项中，设置成允许访问您的摄像头", message: nil, preferredStyle: .alert)
 		let cancelAction = UIAlertAction.init(title: "确定", style: UIAlertActionStyle.cancel) { (action) in
 			self.dismiss(animated: true, completion: nil)
 		}
